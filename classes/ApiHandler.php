@@ -34,6 +34,10 @@ class ApiHandler {
                 'class'   => 'TbConta',
                 'method'  => 'fSoAtivas',
             ],
+            'BaseDespesa' => [
+                'require' => 'TbBaseDespesa.php',
+                'class'   => 'TbBaseDespesa',
+            ],
         ];
     }
 

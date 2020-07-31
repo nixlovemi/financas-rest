@@ -34,6 +34,7 @@ class Database {
         try {
             $db = new PDO($vHost, $vUserName, $vPassword);
             $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->_conn = $db;
 
             if (!$db) {
