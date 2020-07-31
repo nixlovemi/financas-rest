@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+# RewriteEngine On
+# RewriteCond %{REQUEST_URI} !(.*)(css|js|htc|pdf|jpg|jpeg|gif|png|ico)$ [NC]
+# RewriteRule ^(.*)$ index.php?functionName=$1&id=$2 [QSA,L]
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ index.php?functionName=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/([0-9]+)$ index.php?functionName=$1&id=$2 [L]
+</IfModule>
