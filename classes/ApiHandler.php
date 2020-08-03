@@ -41,6 +41,18 @@ class ApiHandler {
             'Menu' => [
                 'require' => 'TbMenu.php',
                 'class'   => 'TbMenu',
+            ],
+            'MetaDespesa' => [
+                'require' => 'TbMetaDespesa.php',
+                'class'   => 'TbMetaDespesa',
+            ],
+            'Usuario' => [
+                'require' => 'TbUsuario.php',
+                'class'   => 'TbUsuario',
+            ],
+            'Lancamento' => [
+                'require' => 'TbLancamento.php',
+                'class'   => 'TbLancamento',
             ]
         ];
     }
