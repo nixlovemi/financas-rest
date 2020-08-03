@@ -38,6 +38,10 @@ class ApiHandler {
                 'require' => 'TbBaseDespesa.php',
                 'class'   => 'TbBaseDespesa',
             ],
+            'Menu' => [
+                'require' => 'TbMenu.php',
+                'class'   => 'TbMenu',
+            ]
         ];
     }
 
